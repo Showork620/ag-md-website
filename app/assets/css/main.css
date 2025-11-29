@@ -1,0 +1,47 @@
+/* Design Tokens - Light & Dark Theme */
+
+:root {
+  /* Light Mode Colors */
+  --color-primary: #3D7A5F;
+  --color-accent: #E67E22;
+  --color-bg-base: #F5F6F7;
+  --color-bg-elevated: #E8EAED;
+  --color-text-primary: #2C3238;
+  --color-text-secondary: #6B7280;
+  --color-border: #D1D5DB;
+}
+
+[data-theme="dark"] {
+  /* Dark Mode Colors */
+  --color-primary: #3D7A5F;
+  --color-accent: #E67E22;
+  --color-bg-base: #1A1D23;
+  --color-bg-elevated: #2C3039;
+  --color-text-primary: #E8E9ED;
+  --color-text-secondary: #9CA3AF;
+  --color-border: #404450;
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-bg-base);
+  color: var(--color-text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
